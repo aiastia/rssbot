@@ -13,7 +13,7 @@ RUN apt update \
 
 RUN wget https://github.com/iovxw/rssbot/releases/download/v$releases/rssbot-v$releases-linux.zip \
 && unzip -n rssbot* \
-&& rm -rf rssbot-v* 
+&& rm -rf rssbot-v* \
 && ls \
 && cd .. \
 && ls 
