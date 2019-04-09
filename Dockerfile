@@ -15,6 +15,9 @@ RUN apt update \
                           unzip
 
 RUN wget https://github.com/iovxw/rssbot/releases/download/v$releases/rssbot-v$releases-linux.zip \
-&& unzip -n rssbot-v$releases-linux.zip \
-&& rm -rf rssbot-v$releases-* 
+&& unzip -n rssbot* \
+&& rm -rf rssbot-v* 
+&& ls
+&& cd ..
+&& ls
 CMD [ “./rssbot $DATAFILE $TOKEN” ]
