@@ -5,8 +5,6 @@ ENV releases=1.4.4 \
     TOKEN=1111111111111111 \
     DATAFILE=./root 
     
-WORKDIR /rss
-
 RUN apt update \
     && apt-get install -y git \
                           openssl \
