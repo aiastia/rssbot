@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 ENV LANG C.UTF-8
-ENV releases=1.4.4 \
+ENV releases=2.0.0-alpha.7 \
     TOKEN=1111111111111111 
     
 RUN apt update \
