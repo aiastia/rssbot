@@ -10,9 +10,8 @@ RUN apt update \
                           wget \
                           unzip
 
-RUN wget https://github.com/iovxw/rssbot/releases/download/v$releases/rssbot-v$releases-linux.zip \
-&& unzip -n rssbot* \
-&& rm -rf rssbot-v* \
+RUN wget -O rssbot https://github.com/iovxw/rssbot/releases/download/v2.0.0-alpha.7/rssbot-zh-amd64-linux \
+&& chmod 777 rssbot \
 && mv rssbot ./bin  
 
 CMD [ “./rssbot DATAFILE $TOKEN” ]
